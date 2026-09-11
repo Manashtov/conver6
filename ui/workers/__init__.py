@@ -1,0 +1,1 @@
+"""Módulo de subprocesos y workers en segundo plano."""

@@ -1,0 +1,71 @@
+Conver6/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+│
+├── core/
+│   ├── __init__.py
+│   ├── exceptions.py
+│   ├── conversion/
+│   │   ├── __init__.py
+│   │   ├── base_converter.py
+│   │   ├── conversion_job.py
+│   │   ├── conversion_registry.py
+│   │   ├── conversion_result.py
+│   │   └── conversion_service.py
+│   ├── image/
+│   │   ├── __init__.py
+│   │   ├── image_converter.py
+│   │   └── image_validator.py
+│   ├── audio/
+│   │   ├── __init__.py
+│   │   ├── audio_backend.py
+│   │   ├── audio_converter.py
+│   │   └── audio_validator.py
+│   ├── document/
+│   │   ├── __init__.py
+│   │   ├── document_converter.py
+│   │   └── document_validator.py
+│   ├── compression/
+│   │   ├── __init__.py
+│   │   └── compression_service.py
+│   └── settings/
+│       ├── __init__.py
+│       └── settings_manager.py
+│
+├── ui/
+│   ├── __init__.py
+│   ├── main_window.py
+│   ├── pages/
+│   │   ├── __init__.py
+│   │   ├── base_page.py
+│   │   ├── images_page.py
+│   │   ├── audio_page.py
+│   │   └── documents_page.py
+│   ├── widgets/
+│   │   ├── __init__.py
+│   │   ├── drop_area.py
+│   │   ├── file_card.py
+│   │   ├── file_list.py
+│   │   ├── conversion_controls.py
+│   │   ├── progress_widget.py
+│   │   └── sidebar.py
+│   ├── dialogs/
+│   │   ├── __init__.py
+│   │   └── settings_dialog.py
+│   ├── controllers/
+│   │   ├── __init__.py
+│   │   ├── file_controller.py
+│   │   ├── save_controller.py
+│   │   └── navigation_controller.py
+│   ├── workers/
+│   │   ├── __init__.py
+│   │   └── conversion_worker.py
+│   └── styles/
+│       ├── __init__.py
+│       ├── palettes.py
+│       └── theme_manager.py
+│
+└── installer/
+    └── windows_build.md

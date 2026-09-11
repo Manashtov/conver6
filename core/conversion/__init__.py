@@ -1,0 +1,1 @@
+"""Módulo de abstracción y ejecución de conversiones."""

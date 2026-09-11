@@ -1,0 +1,1 @@
+"""Servicio de compresión adaptativo por tipo de archivo."""

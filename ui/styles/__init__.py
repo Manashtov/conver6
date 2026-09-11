@@ -1,0 +1,1 @@
+"""Gestión visual de temas y paletas."""

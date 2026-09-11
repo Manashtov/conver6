@@ -1,0 +1,1 @@
+"""Núcleo del sistema de conversión Conver6."""

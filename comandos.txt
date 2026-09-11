@@ -1,0 +1,28 @@
+# Eliminar carpetas de compilación
+Remove-Item -Recurse -Force -ErrorAction SilentlyContinue build, dist, *.spec
+
+# Eliminar todos los archivos __pycache__ y .pyc
+Get-ChildItem -Path . -Include __pycache__, *.pyc -Recurse -Force | Remove-Item -Recurse -Force
+
+
+#Crear compilación
+# pyinstaller --noconfirm --onefile --windowed `
+    --name "Conver6_Portable" `
+    --add-data "core;core" `
+    --add-data "ui;ui" `
+    --add-binary "bin/ffmpeg.exe;bin" `
+    --collect-all qtawesome `
+    main.py
+
+
+# Limpiar la configuración guardada por la app (QSettings de Conver6 en Windows)
+# Remove-Item -Path "HKCU:\Software\Conver6Project\Conver6" -Recurse -Force -ErrorAction SilentlyContinue
+
+# Remover Archivos binarios / si comando no funciona -> eliminar carpeta bin
+# Remove-Item -Recurse -Force -ErrorAction SilentlyContinue build, dist, *.spec; Get-ChildItem -Path . -Include __pycache__, *.pyc -Recurse -Force | Remove-Item -Recurse -Force
+# Stop-Process -Name "Conver6_Portable" -Force -ErrorAction SilentlyContinue
+
+# Para volver a trabajar con el programa
+
+# Crear archivos binarios para crear portable
+# pyinstaller --noconfirm --onefile --windowed --name "Conver6_Portable" --add-data "core;core" --add-data "ui;ui" --add-binary "bin/ffmpeg.exe;bin" --collect-all qtawesome main.py

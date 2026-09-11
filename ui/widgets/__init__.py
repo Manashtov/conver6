@@ -1,0 +1,1 @@
+"""Widgets modulares reutilizables de la interfaz."""

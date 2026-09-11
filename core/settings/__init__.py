@@ -1,0 +1,1 @@
+"""Módulo de persistencia y configuración de usuario."""
